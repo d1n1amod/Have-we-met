@@ -1,0 +1,35 @@
+/* Main nav */
+.main-nav {
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+
+.page-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px;
+   min-width: 250px; 
+}
+
+.page-links li {
+    display: block;
+    width: 100%;
+}
+
+
+.page-links li a {
+
+     color: var(--text-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+font-size: 15px;
+    font-weight: bold;
+    padding: 8px ;
+  
+}
