@@ -15,24 +15,34 @@ function loadNavigation() {
 
   const header = document.querySelector('header');
   
-  const isHomePage = window.location.pathname === '/' || window.location.pathname.includes('index');
-
+ 
   if (header) 
     { 
       header.insertAdjacentHTML('afterend', navHTML);
+  
+   const isHomePage = window.location.pathname === '/' || window.location.pathname.includes('index');
+
       
       if (isHomePage) 
     {
       const homeBtn = document.querySelector('.home-link');
-      if (homeBtn) homeBtn.style.display = 'none';
+      if (homeBtn) homeBtn.style.display = 'none'; }
 
-      console.log('Navigation present');
+
+    const navLinks = document.querySelectorAll('.page-links a');
+        const currentUrl = window.location.href; 
+
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+            
+    if (currentUrl.includes(linkHref)) {
+        link.classList.add('active');}
+     });
+
+    console.log('Navigation present');
     } 
-  }
    else {
-
-    console.log('Header not found');
-}
+    console.log('Header not found');}
 }
 
 loadNavigation();
