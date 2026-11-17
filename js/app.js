@@ -122,7 +122,7 @@ function updateSlideImage(slide, position) {
   if (slide.dataset.image === String(imageIndex)) return;
 
   slide.dataset.image = imageIndex;
-  slide.querySelector("img").src = '/Have-we-met/img/${imageIndex + 1}.png';
+  slide.querySelector("img").src = `/Have-we-met/img/${imageIndex + 1}.png`;
 }
 
 function getSlideZIndex(offset) {
