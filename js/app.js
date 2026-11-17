@@ -4,8 +4,8 @@ function loadNavigation() {
   const navHTML = `
     <nav class="main-nav">
       <ul class="page-links">
-        <li><a href="../index.html"> HOME </a></li>
-        <li><a href="../pages/mustsee.html"> MUST SEE </a></li>
+        <li><a href="/Have-we-met/index.html"> HOME </a></li>
+        <li><a href="/Have-we-met/pages/mustsee.html"> MUST SEE </a></li>
         <li><a href="../pages/swingby.html"> SWING BY </a></li>
         <li><a href="../pages/skip.html"> SKIP </a></li>
         <li><a href="../pages/getintouch.html"> GET IN TOUCH </a></li>
